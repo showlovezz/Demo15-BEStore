@@ -1,3 +1,59 @@
 // Place all the styles related to the bestores controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 導覽區域開始
+header.header_navbar {
+	> .header_top {
+		padding: 10px 0;
+		border-bottom: 1px solid $silver_line;
+		.header_top_left {
+			> p {
+				> b {
+					color: $hover_pink;
+				}
+			}
+		}
+	}
+}
+
+header.header_navbar {
+	.header_top_right {
+		> a {
+			border-left: 1px solid $border_blue;
+			padding-left: 10px;
+			padding-right: 10px;
+			> i {
+				margin-right: 5px;
+			}
+		}
+		> a:first-child {
+			border: 0;
+		}
+		> a:hover {
+			color: $hover_pink;
+		}
+	}
+}
+
+header.header_navbar {
+	.header_down {
+		> .navbar-light {
+			.navbar-nav {
+				.nav-link {
+					color: $block_word;
+				}
+				.nav-link:hover {
+					color: $hover_pink;
+				}
+			}
+		}
+		a {
+			> img {
+				width: 133px;
+				height: 42px;
+			}
+		}
+	}
+}
+// 導覽區域結束

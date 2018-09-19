@@ -4,6 +4,8 @@
 $block_word: #333333;
 $silver_line: #eee;
 $gray_content: #777777;
+$hover_pink: #e83e8c;
+$border_blue: #00BFFF;
 
 /*******************************************************************/
 /* BASIC  */
@@ -50,12 +52,15 @@ a, a:focus {
 
 a {
   cursor: pointer;
+  color: $block_word;
+  transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -webkit-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+}
+
+a:hover {
   text-decoration: none;
-  color: #333333;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
 }
 
 img {
@@ -90,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: $block_word;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 
@@ -121,6 +126,6 @@ h6 {
 p {
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: $gray_content;
 }
