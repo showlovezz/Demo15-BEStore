@@ -1,0 +1,126 @@
+/*******************************************************************/
+/* Color Style */
+/*******************************************************************/
+$block_word: #333333;
+$silver_line: #eee;
+$gray_content: #777777;
+
+/*******************************************************************/
+/* BASIC  */
+/*******************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $block_word;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333333;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+}
+
+br {
+  font-size: 0;
+  line-height: 0;
+}
+
+hr {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top: 1px solid $silver_line;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: $block_word;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: $gray_content;
+}
