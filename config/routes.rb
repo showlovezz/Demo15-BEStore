@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # 前台網路路徑設定
   root "bestores#index"
+
+	# 後台網路路徑設定
+  namespace :admin do
+    root "bestores#index"
+  end
 end

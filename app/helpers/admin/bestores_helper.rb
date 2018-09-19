@@ -1,0 +1,2 @@
+module Admin::BestoresHelper
+end
