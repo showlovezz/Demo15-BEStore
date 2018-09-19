@@ -86,3 +86,62 @@ header.header_navbar {
 	}
 }
 // 輪播區域結束
+
+// 商品分類促銷區域開始
+section.category_banner {
+	.category_banner_item {
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+		> .category_banner_title {
+			position: absolute;
+			top: 50%;
+			right: 5%;
+    	z-index: 2;
+    	transform: translateY(-50%);
+		  -moz-transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		  -o-transform: translateY(-50%);
+		  -webkit-transform: translateY(-50%);
+		  > h5, h3 {
+		  	color: $white_word;
+		  	margin-bottom: 20px;
+		  }
+		}
+		> .text-left {
+			> h5, h3 {
+		  	color: $block_word;
+		  	margin-bottom: 20px;
+		  }
+		}
+		> .category_banner_title.text-left {
+			left: 5%;
+		}
+	}
+}
+
+section.category_banner {
+	.category_banner_item {
+		> .category_banner_image:before {
+			background-color: rgba(0, 0, 0, 0.5);
+	    content: "";
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    transform: scale(0);
+	    transition: all 0.5s ease 0s;
+	    -o-transition: all 0.5s ease 0s;
+	    -moz-transition: all 0.5s ease 0s;
+	    -webkit-transition: all 0.5s ease 0s;
+	    width: 100%;
+	    z-index: 1;
+		}
+	}
+	.category_banner_item:hover {
+		> .category_banner_image:before {
+			transform: scale(1);
+		}
+	}
+}
+// 商品分類促銷區域結束
