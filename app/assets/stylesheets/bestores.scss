@@ -57,3 +57,32 @@ header.header_navbar {
 	}
 }
 // 導覽區域結束
+
+// 輪播區域開始
+.carousel {
+	.carousel-caption {
+		bottom: 30%;
+		> h1, h2 {
+			margin-bottom: 20px;
+		}
+		> p {
+			margin-bottom: 10px;
+			font-size: 20px;
+		}
+		> h1 {
+			font-size: 62px;
+		}
+		> .button {
+			padding: 15px 35px;
+			display: inline-block;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+	}
+	.onsale_text {
+		> p, h1, h2 {
+			color: $white_word;
+		}
+	}
+}
+// 輪播區域結束
