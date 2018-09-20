@@ -1,3 +1,15 @@
 <!-- 訊息條區域開始 -->
 <%= render "admin/shared/message" %>
 <!-- 訊息條區域結束 -->
+
+<h1>產品後台</h1>
+<ul>
+  <% @products.each do |product| %>
+  <li>
+    <%= product.name %>
+    <%= link_to 'Edit', edit_admin_product_path(product) %>
+    <%= link_to 'Delete', admin_product_path(product), method: :delete, data: {confirm:"Are you sure?"} %>
+  </li>
+  <% end %>
+</ul>
+<%= link_to 'New Product', new_admin_product_path %>
