@@ -40,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1', '>= 4.1.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise', '~> 4.5'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 
 group :production do
   gem 'pg', '~> 0.20'

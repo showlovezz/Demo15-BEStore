@@ -23,5 +23,9 @@
   <%= f.label :special_price, "特價：" %>
   <%= f.text_field :special_price %>
 
+  <%= f.label :image, "Photo" %>
+  <%= image_tag @product.image.url, width: '300px' if @product.image? %>
+  <%= f.file_field :image %>
+
   <%= f.submit %>
 <% end %>
