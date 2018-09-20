@@ -1,0 +1,33 @@
+<!-- 後台導覽列區域開始 -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-warning">
+	<%= link_to root_path, class: "navbar-brand" do %>
+  	<img src="https://cdn.shopify.com/s/files/1/1473/1066/t/2/assets/logo.png?11705775279586523163">
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+       <li class="nav-item">
+       	<%= link_to "Dashoard", admin_root_path, class: "nav-link nav_link" %>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link nav_link" href="#">Category</a>
+	      </li>
+	      <li class="nav-item">
+	        <%= link_to "Product", admin_products_path, class: "nav-link nav_link" %>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link nav_link" href="#">Order</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link nav_link" href="#">Post</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link nav_link" href="#">User</a>
+	      </li>
+    </ul>
+  </div>
+</nav>
+<!-- 後台導覽列區域結束 -->

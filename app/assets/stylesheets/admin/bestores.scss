@@ -1,3 +1,27 @@
 // Place all the styles related to the admin::bestores controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 後台導覽列區域開始
+.navbar-dark {
+	> .navbar-brand {
+		> img {
+			width: 133px;
+			height: 42px;
+		}
+	}
+}
+
+.navbar-dark {
+	.navbar-nav {
+		.nav_link {
+			color: $block_word;
+			font-size: 16px;
+		}
+		.nav_link:hover {
+			color: $white_word;
+			background-color: $hover_pink;
+		}
+	}
+}
+// 後台導覽列區域結束
