@@ -258,3 +258,18 @@ section.promo_service {
 	}
 }
 // 促銷及服務區域結束
+
+// 合作夥伴 logo 區域開始
+section.partner_log_area {
+	background-color: $silver_line;
+	.text-center {
+		margin-bottom: 20px;
+		> h2 {
+			margin-bottom: 20px;
+		}
+	}
+	.logo_item {
+		margin-bottom: 20px;
+	}
+}
+// 合作夥伴 logo 區域結束
