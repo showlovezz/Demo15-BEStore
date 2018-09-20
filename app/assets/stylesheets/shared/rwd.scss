@@ -19,6 +19,18 @@
 		background-image: url("http://shoppestores.com/demos/apparel-store/images/bg.jpg");
 	}
 }
+
+@media screen and (max-width: 767px) {
+	// 產品名稱縮減
+	section.section_padding {
+		.rwd_truncate {
+			max-width: 170px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+}
 // 手機、平板以下 平板的直向和橫向都能用結束
 
 // 桌機、平板以上開始
