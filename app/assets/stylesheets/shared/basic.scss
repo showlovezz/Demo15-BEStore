@@ -130,3 +130,39 @@ p {
   margin-bottom: 0px;
   color: $gray_content;
 }
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+
+.py-100 {
+  padding: 100px 0;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.button {
+  padding: 15px 35px;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.btn_pink {
+  color: $white_word;
+  background-color: $hover_pink;
+  border-color: $hover_pink;
+}
+
+.btn_pink:hover {
+  color: $block_word;
+  background-color: $border_blue;
+  border-color: $border_blue;
+}
