@@ -1,0 +1,27 @@
+<% if @product.errors.any? %>
+  <h2>We have some errors here !</h2>
+  <ul>
+    <% @product.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for  [:admin, @product] do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description, "Description" %>
+  <%= f.text_area :description %>
+
+  <%= f.label :tag, "Tag" %>
+  <%= f.text_field :tag %>
+
+  <%= f.label :basic_price, "原價：" %>
+  <%= f.text_field :basic_price %>
+
+  <%= f.label :special_price, "特價：" %>
+  <%= f.text_field :special_price %>
+
+  <%= f.submit %>
+<% end %>
