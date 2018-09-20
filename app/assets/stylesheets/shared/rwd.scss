@@ -1,8 +1,9 @@
 // 手機、平板以下 平板的直向和橫向都能用開始
 @media screen and (max-width: 767px) {
-	// 導覽列 Top 區域，右邊區塊置中
+	// 導覽列 Top 區域，右邊區塊置中及字變小
 	.header_top_right {
 		text-align: center;
+		font-size: 12px;
 	}
 	
 	// 導覽列 Down 區域，導覽列內距
@@ -23,11 +24,20 @@
 @media screen and (max-width: 767px) {
 	// 產品名稱縮減
 	section.section_padding {
-		.rwd_truncate {
+		.truncate {
 			max-width: 170px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	// 文章卡片 footer 字置中
+	section.home_post_area {
+		.card-footer {
+			text-align: center;
 		}
 	}
 }
@@ -50,7 +60,4 @@
 	}
 }
 // 桌機、平板以上結束
-
-
-
   
