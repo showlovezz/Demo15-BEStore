@@ -7,6 +7,8 @@ $silver_line: #eee;
 $gray_content: #777777;
 $hover_pink: #e83e8c;
 $border_blue: #00BFFF;
+$footer_blue: #f5fafa;
+$footer_black: #252525;
 
 /*******************************************************************/
 /* BASIC  */
@@ -145,6 +147,10 @@ p {
 
 .pb_40 {
   padding-bottom: 40px;
+}
+
+.py_20 {
+  padding: 20px 0;
 }
 
 .py_40 {

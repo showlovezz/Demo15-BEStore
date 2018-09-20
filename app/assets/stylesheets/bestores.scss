@@ -359,3 +359,49 @@ section.home_post_area {
 	}
 }
 // 網站文章區域結束
+
+// footer 區域開始
+footer.footer_area {
+	> .footer_top {
+		background-color: $footer_blue;
+		.footer_item1, .footer_item2 {
+			margin-bottom: 20px;
+			> h6 {
+				margin-bottom: 20px;
+			}
+		}
+		.footer_item2 {
+			> ul {
+				> li {
+					list-style: none;
+					margin-bottom: 7px;
+					> a:hover {
+						color: $hover_pink;
+					}
+				}
+			}
+		}
+		.contactus_block {
+			> ul {
+				> li {
+					> i {
+						padding-right: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer.footer_area {
+	> .footer_down {
+		background-color: $footer_black;
+		p {
+			color: $white_word;
+			> b {
+				color: $hover_pink;;
+			}
+		}
+	}
+}
+// footer 區域結束
