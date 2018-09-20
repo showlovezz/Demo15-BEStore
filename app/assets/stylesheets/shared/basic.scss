@@ -131,20 +131,39 @@ p {
   color: $gray_content;
 }
 
-.pt-40 {
+.pt_40 {
   padding-top: 40px;
 }
 
-.pb-20 {
+.pt_60 {
+  padding-top: 60px;
+}
+
+.pb_20 {
   padding-bottom: 20px;
 }
 
+.pb_40 {
+  padding-bottom: 40px;
+}
 
-.py-100 {
+.py_40 {
+  padding: 40px 0;
+}
+
+.py_80 {
+  padding: 80px 0;
+}
+
+.py_100 {
   padding: 100px 0;
 }
 
-.p-40 {
+.p_20 {
+  padding: 20px;
+}
+
+.p_40 {
   padding: 40px;
 }
 

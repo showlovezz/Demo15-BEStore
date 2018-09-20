@@ -234,3 +234,27 @@ section.home_about_area {
 	}
 }
 // 網站廣告區域結束
+
+// 促銷及服務區域開始
+section.promo_service {
+	.promo_service_item {
+		border: 1px solid $silver_line;
+		margin-bottom: 20px;
+		> .promo_icon {
+			display: inline-block;
+			> i {
+				font-size: 45px;
+				line-height: 45px;
+			}
+		}
+		> .promo_info {
+			display: inline-block;
+			text-align-last: left;
+			margin-left: 30px;
+			> p {
+				font-style: italic;
+			}
+		}
+	}
+}
+// 促銷及服務區域結束
