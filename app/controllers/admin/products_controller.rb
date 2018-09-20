@@ -4,7 +4,7 @@ class Admin::ProductsController < ApplicationController
 	before_action :authenticate_admin
 
 	# 尋找產品 Id
-	before_action :find_product, only: [:edit, :update]
+	before_action :find_product, only: [:edit, :update, :destroy]
 
 	# 以下是產品 CRUD
 	def index
@@ -38,6 +38,12 @@ class Admin::ProductsController < ApplicationController
 			render :edit
 		end
 	end
+
+	def destroy
+    @product.destroy
+    flash[:alert] = "產品已經被刪除 !"
+		redirect_to admin_products_path
+  end
 
 	private
 
