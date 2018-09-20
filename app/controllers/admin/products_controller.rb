@@ -3,6 +3,9 @@ class Admin::ProductsController < ApplicationController
 	before_action :authenticate_user!
 	before_action :authenticate_admin
 
+	# 尋找產品 Id
+	before_action :find_product, only: [:edit, :update]
+
 	# 以下是產品 CRUD
 	def index
 		@products = Product.all
@@ -23,10 +26,27 @@ class Admin::ProductsController < ApplicationController
 		end
 	end
 
+	def edit
+	end
+
+	def update
+		if @product.update(product_params)
+			flash[:notice] = "產品修改成功"
+			redirect_to admin_products_path
+		else
+			flash.now[:alert] = "產品修改失敗，是不是少輸入什麼 !?"
+			render :edit
+		end
+	end
+
 	private
 
 	def product_params
 		params.require(:product).permit(:name, :description, :tag, :basic_price, :special_price)
+	end
+
+	def find_product
+		@product = Product.find(params[:id])
 	end
 	
 end
