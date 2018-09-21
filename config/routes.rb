@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 	# 後台網路路徑設定
   namespace :admin do
     root "bestores#index"
+    resources :categories, except: [:show]
     resources :products, except: [:show]
   end
 end
