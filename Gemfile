@@ -41,6 +41,7 @@ gem 'bootstrap', '~> 4.1', '>= 4.1.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise', '~> 4.5'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'hirb', '~> 0.7.3'
 
 group :production do
   gem 'pg', '~> 0.20'
