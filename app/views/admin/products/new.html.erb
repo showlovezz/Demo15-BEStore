@@ -1,3 +1,18 @@
+<!-- 後台導覽列區域開始 -->
+<%= render "admin/shared/admin_navbar" %>
+<!-- 後台導覽列區域結束 -->
+
+<!-- 麵包屑區域開始 -->
+<%= render "admin/products/list_area" %>
+<!-- 麵包屑區域結束 -->
+
 <!-- 表單開始 -->
-<%= render partial: "form" %>
+<section class="product_form_area">
+	<div class="container">
+		<div class="product_form_block">
+			<h2>new data</h2>
+			<%= render partial: "form", locals: {product: @product} %>
+		</div>
+	</div>
+</section>
 <!-- 表單結束 -->
