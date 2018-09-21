@@ -1,7 +1,4 @@
-class Admin::ProductsController < ApplicationController
-	# 進入後台首頁需註冊及身份為管理員
-	before_action :authenticate_user!
-	before_action :authenticate_admin
+class Admin::ProductsController < Admin::BaseController
 
 	# 尋找產品 Id
 	before_action :find_product, only: [:edit, :update, :destroy]
