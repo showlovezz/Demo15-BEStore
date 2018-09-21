@@ -9,7 +9,7 @@ $hover_pink: #e83e8c;
 $border_blue: #00BFFF;
 $footer_blue: #f5fafa;
 $footer_black: #252525;
-
+$bg_orange: #ffc107;
 /*******************************************************************/
 /* BASIC  */
 /*******************************************************************/
@@ -191,3 +191,31 @@ p {
   background-color: $border_blue;
   border-color: $border_blue;
 }
+
+// 麵包屑區域開始
+section.list_area {
+  margin-bottom: 20px;
+  background-color: $silver_line;
+  ul {
+    > li {
+      list-style: none;
+      display: inline-block;
+      padding: 15px 20px;
+      transition: all 1s ease 0s;
+      > a {
+        color: #e1534f;
+        > i {
+          margin-right: 5px;
+        }
+      }
+    }
+    > li:hover {
+      background-color: $border_blue;
+      > a {
+        color: $white_word;;
+      }
+    }
+  }
+}
+
+// 麵包屑區域結束

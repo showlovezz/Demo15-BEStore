@@ -1,12 +1,12 @@
 // 手機、平板以下 平板的直向和橫向都能用開始
 @media screen and (max-width: 767px) {
-	// 導覽列 Top 區域，右邊區塊置中及字變小
+	// 前台導覽列 Top 區域，右邊區塊置中及字變小
 	.header_top_right {
 		text-align: center;
 		font-size: 12px;
 	}
 	
-	// 導覽列 Down 區域，導覽列內距
+	// 前台導覽列 Down 區域，導覽列內距
 	.navbar-expand-lg {
 		.navbar-nav {
 			.nav-link {
@@ -15,14 +15,14 @@
 		}
 	}
 	
-	// 導覽列 Down 區域，帶一張背景圖
+	// 前台導覽列 Down 區域，帶一張背景圖
 	.rwd_ul_bg {
 		background-image: url("http://shoppestores.com/demos/apparel-store/images/bg.jpg");
 	}
 }
 
 @media screen and (max-width: 767px) {
-	// 產品名稱縮減
+	// 前台產品名稱縮減
 	section.section_padding {
 		.truncate {
 			max-width: 170px;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	// 文章卡片 footer 字置中
+	// 前台文章卡片 footer 字置中
 	section.home_post_area {
 		.card-footer {
 			text-align: center;
@@ -45,12 +45,12 @@
 
 // 桌機、平板以上開始
 @media screen and (min-width: 768px) {
-	// 導覽列 Top 區域，右邊區塊置右
+	// 前台導覽列 Top 區域，右邊區塊置右
 	.header_top_right {
 		text-align: right;
 	}
 	
-	// 導覽列 Down 區域，導覽列內距
+	// 前台導覽列 Down 區域，導覽列內距
 	.navbar-expand-lg {
 		.navbar-nav {
 			.nav-link {

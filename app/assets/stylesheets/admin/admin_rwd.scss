@@ -1,0 +1,17 @@
+// 手機、平板以下 平板的直向和橫向都能用開始
+@media screen and (max-width: 767px) {
+	.bg_color {
+		background-color: $bg_orange;
+	}
+}
+// 手機、平板以下 平板的直向和橫向都能用結束
+
+
+// 桌機、平板以上開始
+@media screen and (min-width: 768px) {
+	.bg_color {
+		background-color: $white_word;
+	}
+}
+// 桌機、平板以上結束
+  
