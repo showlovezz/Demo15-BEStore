@@ -4,4 +4,7 @@ class Product < ApplicationRecord
 
 	# 圖片上傳器
 	mount_uploader :image, PhotoUploader
+
+	# 很多產品會屬於一個分類
+	belongs_to :category, optional: true
 end
