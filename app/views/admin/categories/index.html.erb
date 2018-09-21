@@ -1,0 +1,64 @@
+<!-- 後台導覽列區域開始 -->
+<%= render "admin/shared/admin_navbar" %>
+<!-- 後台導覽列區域結束 -->
+
+<!-- 麵包屑區域開始 -->
+<%= render "list_area" %>
+<!-- 麵包屑區域結束 -->
+
+<!-- 訊息條區域開始 -->
+<%= render "admin/shared/message" %>
+<!-- 訊息條區域結束 -->
+
+<!-- 分類表格區域開始 -->
+<section class="category_table">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-xl-12">
+				<h2>data table</h2>
+				<div class="table_data">
+					<table class="table">
+						<caption>List of Categories</caption>
+						<thead>
+							<tr>
+								<th>Id</th>
+								<th>Name</th>
+								<th>Count</th>
+								<th></th>
+							</tr>
+						</thead>
+						<% @categories.each do |category| %>
+							<tbody>
+								<tr class="item">
+									<td><%= category.id %></td>
+					      	<td><%= category.name %></td>
+					      	<td><%= category.products.count %></td>
+					      	<td class="text-center">
+						      	<span class="edit">
+						      		<%= link_to admin_categories_path(id: category.id), data_toggle: "tooltip", title: "編輯" do %>
+						      			<i class="fas fa-pencil-alt"></i>
+						      		<% end %>
+						      	</span>
+						      	<span class="delete">
+						      		<%= link_to admin_category_path(category), data_toggle: "tooltip", title: "刪除", method: :delete, data: {confirm:"Are you sure?"}  do %>
+						      			<i class="fas fa-trash-alt"></i>
+						      		<% end %>
+						      	</span>
+						      </td>
+								</tr>
+								<tr class="spacer"></tr>
+							</tbody>
+						<% end %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 分類表格區域開始 -->
+
+<script>
+	$(function(){
+		$('[data_toggle="tooltip"]').tooltip();
+	});
+</script>
