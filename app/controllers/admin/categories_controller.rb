@@ -34,6 +34,13 @@ class Admin::CategoriesController < ApplicationController
 		end
 	end
 
+	def destroy
+	  @category = Category.find(params[:id])
+	  @category.destroy
+		flash[:notice] = "產品分分類已被刪除!"
+		redirect_to admin_categories_path
+	end
+
 	private
 
 	def category_params
