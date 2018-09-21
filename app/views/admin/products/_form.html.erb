@@ -24,6 +24,9 @@
       </div>
     </div>
     <div class="col-9 col-md-9 col-xl-9">
+      <div class="form-group">
+        <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: true}, {class: "form-control"} %>
+      </div>
       <div class="row">
         <div class="col">
           <div class="form-group">
