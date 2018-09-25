@@ -131,7 +131,7 @@ h6 {
 p {
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 0px;
+  // margin-bottom: 0px;
   color: $gray_content;
 }
 
@@ -175,6 +175,10 @@ p {
   padding: 40px;
 }
 
+.mb_20 {
+  margin-bottom: 20px;
+}
+
 .button {
   padding: 15px 35px;
   display: inline-block;
@@ -194,8 +198,20 @@ p {
   border-color: $border_blue;
 }
 
-// 麵包屑區域開始
-section.list_area {
+.btn_dark {
+  color: $white_word;
+  background-color: $block_word;
+  border-color: $block_word;
+}
+
+.btn_dark:hover {
+  color: $hover_pink;
+  background-color: $block_word;
+  border-color: $block_word;
+}
+
+// 後台麵包屑區域開始
+section.back_list_area {
   margin-bottom: 30px;
   background-color: $silver_line;
   ul {
@@ -219,7 +235,7 @@ section.list_area {
     }
   }
 }
-// 麵包屑區域結束
+// 後台麵包屑區域結束
 
 // 後台表格 Css 屬性開始
 section.product_table, section.category_table {
@@ -265,3 +281,28 @@ section.product_form_area {
   }
 }
 // 新增/編輯產品區域 form 結束
+
+// 前台麵包屑區域開始
+section.front_list_area {
+  margin-bottom: 30px;
+  background-color: $silver_line;
+  li {
+    display: inline-block;
+    padding: 30px 0;
+    > a {
+      font-weight: 900;
+    }
+    > a:hover {
+      color: $hover_pink;
+    }
+    > a::after {
+      content: "»";
+      font-weight: normal;
+      font-family: FontAwesome;
+      padding-right: 10px;
+      padding-left: 10px;
+      color: $block_word;
+    }
+  }
+}
+// 前台麵包屑區域結束

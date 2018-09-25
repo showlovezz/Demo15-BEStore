@@ -9,6 +9,7 @@ header.header_navbar {
 		border-bottom: 1px solid $silver_line;
 		.header_top_left {
 			> p {
+				margin-bottom: 0;
 				> b {
 					color: $hover_pink;
 				}
@@ -253,6 +254,7 @@ section.promo_service {
 			margin-left: 30px;
 			> p {
 				font-style: italic;
+				margin: 0;
 			}
 		}
 	}
@@ -398,6 +400,7 @@ footer.footer_area {
 		background-color: $footer_black;
 		p {
 			color: $white_word;
+			margin-bottom: 0;
 			> b {
 				color: $hover_pink;;
 			}
@@ -405,3 +408,69 @@ footer.footer_area {
 	}
 }
 // footer 區域結束
+
+// 產品詳細介紹區域開始
+section.product_show_area {
+	.right_product_content {
+		> h2 {
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+		> .product_rating {
+			> ul {
+				display: inline-block;
+				margin-right: 5px;
+				> li {
+					display: inline-block;
+					color: $bg_orange;
+				}
+			}
+		}
+		> .product_price {
+			margin-top: 15px;
+			margin-bottom: 20px;
+			> del {
+				color: $gray_content;
+				font-style: italic;
+			}
+			> h4 {
+				margin-left: 5px;
+				display: inline-block;
+				color: $hover_pink;
+				font-size: 28px;
+			}
+		}
+		> .product_meta {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			> span {
+				display: block;
+				margin-bottom: 20px;
+				font-weight: 600;
+				.sku, .category, .tag {
+					font-weight: 400;
+					color: $gray_content;
+				}
+			}
+		}
+		> .product_share {
+			> span {
+				font-weight: 600;
+			}
+			> ul {
+				display: inline-block;
+				> li {
+					display: inline-block;
+					margin-right: 15px;
+					> a {
+						color: $gray_content;
+					}
+					> a:hover {
+						color: $hover_pink;
+					}
+				}
+			}
+		}
+	}
+}
+// 產品詳細介紹區域結束

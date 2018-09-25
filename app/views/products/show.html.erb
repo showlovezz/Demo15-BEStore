@@ -1,0 +1,73 @@
+<!-- 導覽區域開始 -->
+<%= render partial: "shared/header_navbar" %>
+<!-- 導覽區域結束 -->
+
+<!-- 產品麵包屑區域開始 -->
+<section class="front_list_area">
+	<div class="container">
+		<ul>
+			<li><%= link_to "Home", root_path %></li>
+			<li><a href="#">KIDS</a></li>
+			<li><%= @product.name %></li>
+		</ul>
+	</div>
+</section>
+<!-- 產品麵包屑區域結束 -->
+
+<!-- 產品詳細介紹區域開始 -->
+<section class="product_show_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 col-xl-6 mb_20">
+				<div class="left_product_image">
+					<%= image_tag @product.image.url, class: "img-fluid" %>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-xl-6 mb_20">
+				<div class="right_product_content">
+					<h2><%= @product.name %></h2>
+					<div class="product_rating">
+						<ul>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+							<li><i class="fas fa-star"></i></li>
+						</ul>
+						<span>2 reviews</span>
+					</div>
+					<div class="product_price">
+						<del>$<%= @product.basic_price %></del>
+						<h4>$<%= @product.special_price %></h4>
+					</div>
+					<div class="product_description">
+						<p><%= simple_format @product.description %></p>
+					</div>
+					<div class="product_btn">
+						<a href="#" class="button btn_dark">ADD TO CART</a>
+					</div>
+					<div class="product_meta">
+						<span>SKU : <span class="sku">Product SKU</span></span>
+						<span>Category : <span class="category"><%= @product.category.name %></span></span>
+						<span>Tag : <span class="tag"><%= @product.tag %></span></span>
+					</div>
+					<div class="product_share">
+						<span>Share :</span>
+						<ul>
+	          	<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+	          	<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+	          	<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+	          	<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+	          	<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 產品詳細介紹區域結束 -->
+
+<!-- footer 區域開始 -->
+<%= render partial: "shared/footer" %>
+<!-- footer 區域結束 -->
