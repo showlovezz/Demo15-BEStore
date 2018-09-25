@@ -142,83 +142,16 @@
 </section>
 <!-- 商品分類促銷區域結束 -->
 
-<!-- 精選商品區域開始，這裡做4個，未來放8個 -->
+<!-- 精選商品區域開始，放8個 -->
 <section class="featured_products pt_60 pb_40">
 	<div class="container">
 		<h2 class="text-center">Featured products</h2>
 		<div class="row">
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/09.jpg" alt="product1" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
+			<% @products.each do |product| %>
+				<div class="col-6 col-md-3 col-xl-3">
+					<%= render partial: "shared/product_card", locals: {product: product} %>
 				</div>
-			</div>
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/10.jpg" alt="product2" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/11.jpg" alt="product3" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/12.jpg" alt="product4" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/12.jpg" alt="product4" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-6 col-md-3 col-xl-3">
-				<div class="product_item">
-					<div class="product_image">
-						<img src="http://magicclubgroup.com/bapor/img/product/big/11.jpg" alt="product3" class="img-fluid">
-					</div>
-					<div class="text-center product_content">
-						<p class="rwd_truncate">Printed Round White T-shirt</p>
-						<del>$1999</del>
-						<h4>$999</h4>
-					</div>
-				</div>
-			</div>
+			<% end %>
 		</div>
 	</div>
 </section>
