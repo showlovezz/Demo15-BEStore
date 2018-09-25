@@ -23,8 +23,8 @@
 
 @media screen and (max-width: 767px) {
 	// 前台產品名稱縮減
-	section.section_padding {
-		.truncate {
+	section.featured_products {
+		.rwd_truncate {
 			max-width: 170px;
 			white-space: nowrap;
 			overflow: hidden;
