@@ -306,3 +306,62 @@ section.front_list_area {
   }
 }
 // 前台麵包屑區域結束
+
+// 精選商品區域開始
+section.featured_products, section.category_products {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .product_item {
+    margin-bottom: 20px;
+    .product_image {
+    margin-bottom: 20px;
+    }
+    .product_content {
+      > p {
+        color: $block_word;
+        margin-bottom: 10px;
+        transition: all 0.5s ease 0s;
+      }
+      > del {
+        color: $gray_content;
+        font-style: italic;
+      }
+      > h4 {
+        display: inline-block;
+        color: $hover_pink;
+      }
+    }
+  }
+}
+
+section.featured_products, section.category_products {
+  .product_item {
+    > .product_image {
+      position: relative;
+      overflow: hidden;
+      > img {
+        -webkit-transition: transform 2s cubic-bezier(0, 0, 0.44, 1.18), -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
+        -moz-transition: transform 2s cubic-bezier(0, 0, 0.44, 1.18), -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
+        transition: transform 2s cubic-bezier(0, 0, 0.44, 1.18), -webkit-transform 2s cubic-bezier(0, 0, 0.44, 1.18);
+      }
+    }
+  }
+  .product_item:hover {
+    > .product_image {
+      > img {
+        -webkit-transform: scale(1.09);
+        -moz-transform: scale(1.09);
+        -o-transform: scale(1.09);
+        -ms-transform: scale(1.09);
+        transform: scale(1.09);
+      }
+    }
+    > .product_content {
+      > p {
+        color: $hover_pink;
+      }
+    }
+  }
+}
+// 精選商品區域結束

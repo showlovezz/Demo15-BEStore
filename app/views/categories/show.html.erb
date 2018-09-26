@@ -1,0 +1,68 @@
+<!-- 導覽區域開始 -->
+<%= render partial: "shared/header_navbar" %>
+<!-- 導覽區域結束 -->
+
+<!-- 產品麵包屑區域開始 -->
+<section class="front_list_area">
+	<div class="container">
+		<ul>
+			<li><%= link_to "Home", root_path, class: "link_item" %></li>
+			<li><%= @category.name %></li>
+		</ul>
+	</div>
+</section>
+<!-- 產品麵包屑區域結束 -->
+
+<!-- 和該分類關聯的產品資料開始 -->
+<section class="category_products">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-3">
+				<div class="category_products_left">
+					<div class="categories_link">
+						<h4>Shop Categories</h4>
+						<ul>
+							<% @categories.each do |category| %>
+					      <li><%= link_to category.name, category_path(category) %></li>
+					    <% end %>
+						</ul>
+					</div>
+					<hr>
+					<div class="categories_tag">
+						<h4>Popular Tag</h4>
+						<ul>
+							<li><a href="#" class="tag_btn">style</a></li>
+							<li><a href="#" class="tag_btn">model</a></li>
+							<li><a href="#" class="tag_btn">clothes</a></li>
+							<li><a href="#" class="tag_btn">bikini</a></li>
+							<li><a href="#" class="tag_btn">colorful</a></li>
+							<li><a href="#" class="tag_btn">prom dresses</a></li>
+							<li><a href="#" class="tag_btn mb_20">club dresses</a></li>
+						</ul>	
+					</div>
+					<hr>
+				</div>
+			</div>
+			<div class="col-12 col-md-9 col-xl-9">
+				<div class="category_products_right">
+					<div class="row">
+						<div class="col-12 col-md-12 col-xl-12">
+							<h2><%= @category.name %> <small><%= @category.products.count%> Products</small></h2>
+							<hr>
+						</div>
+						<% @products.each do |product| %>
+							<div class="col-6 col-md-4 col-xl-4">
+								<%= render partial: "shared/product_card", locals: {product: product} %>
+							</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 和該分類關聯的產品資料結束 -->
+
+<!-- footer 區域開始 -->
+<%= render partial: "shared/footer" %>
+<!-- footer 區域結束 -->
