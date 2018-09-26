@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # 前台網路路徑設定
   root "bestores#index"
+  resources :categories, only: [:show]
   resources :products, only: [:index, :show]
 
 	# 後台網路路徑設定
