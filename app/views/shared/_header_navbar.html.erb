@@ -25,9 +25,9 @@
 	</div>
 	<div class="header_down">
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" href="#">
-		  	<img src="https://cdn.shopify.com/s/files/1/1473/1066/t/2/assets/logo.png?11705775279586523163">
-		  </a>
+			<%= link_to root_path, class: "navbar-brand" do %>
+				<img src="https://cdn.shopify.com/s/files/1/1473/1066/t/2/assets/logo.png?11705775279586523163">
+			<% end %>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -35,20 +35,13 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav ml-auto rwd_ul_bg">
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+		      	<%= link_to "HOME", root_path, class: "nav-link" %>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">MEN</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">WOMEN</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">KIDS</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">FOOTWEAR</a>
-		      </li>
+		      <% @categories.each do |category| %>
+			      <li class="nav-item">
+			      	<%= link_to category.name, category_path(category), class: "nav-link" %>
+			      </li>
+			    <% end %>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">BLOG</a>
 		      </li>

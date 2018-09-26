@@ -13,10 +13,11 @@
 					<div class="footer_item2">
 						<h6>Information</h6>
 						<ul>
-							<li><a href="#">Men</a></li>
-							<li><a href="#">Women</a></li>
-							<li><a href="#">Kids</a></li>
-							<li><a href="#">Accessories</a></li>
+							<% @categories.each do |category| %>
+								<li>
+									<%= link_to category.name, category_path(category) %>
+								</li>
+							<% end %>
 							<li><a href="#">Brand</a></li>
 							<li><a href="#">Blog</a></li>
 						</ul>

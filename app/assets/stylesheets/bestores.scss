@@ -43,6 +43,7 @@ header.header_navbar {
 			.navbar-nav {
 				.nav-link {
 					color: $block_word;
+					text-transform: uppercase;
 				}
 				.nav-link:hover {
 					color: $hover_pink;
@@ -377,6 +378,9 @@ footer.footer_area {
 				> li {
 					list-style: none;
 					margin-bottom: 7px;
+					> a {
+						text-transform: capitalize;
+					}
 					> a:hover {
 						color: $hover_pink;
 					}
